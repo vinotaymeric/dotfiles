@@ -10,9 +10,12 @@ alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
 alias gcm="git commit"
 alias gcom="git checkout master"
 alias pullb="git pull --rebase origin HEAD"
-alias gp="git push origin HEAD"
+alias gp="git push -f origin HEAD"
 alias gco="git checkout"
-alias gcm="git commit -m"
+alias gcm="git commit -S -m"
 alias gst="git status -sb"
 alias gsl="git stash list"
 alias gamend="git commit --amend"
+
+# Files
+alias r="cd code/vinotaymeric/lifen"
