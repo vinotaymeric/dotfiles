@@ -55,7 +55,7 @@
 [branch "master"]
   mergeoptions = --no-edit
 [user]
-	email = aymeric.vinot@gmail.com
+	email = aymeric.vinot@lifen.fr
 	name = Aymeric Vinot
 	signingkey = 228175ECBC40B7EF
 [commit]
