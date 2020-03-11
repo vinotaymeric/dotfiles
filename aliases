@@ -17,5 +17,21 @@ alias gst="git status -sb"
 alias gsl="git stash list"
 alias gamend="git commit --amend"
 
+# Dependencies
+alias bi="bundle install"
+alias yi="yarn install" 
+
 # Files
 alias r="cd code/vinotaymeric/lifen"
+
+# Heroku
+alias hl="heroku local"
+
+# Docker
+alias dr="docker run"
+alias dc="docker-compose"
+alias dcu="docker-compose up"
+
+# Rails 
+alias mig="bundle exec rake db:migrate && bundle exec rake db:test:prepare"
+alias tests="bundle exec spring rspec spec/"
