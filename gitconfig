@@ -12,7 +12,7 @@
 [core]
   pager = less -FRSX
 	editor = code --wait
-  
+
 [diff]
     tool = default-difftool
 [difftool "default-difftool"]
@@ -30,19 +30,14 @@
   # d = !git --no-pager diff
   # dt  = difftool
   # stat = !git --no-pager diff --stat
-
   # Clean merged branches
   sweep = !git branch --merged master | grep -v 'master$' | xargs git branch -d && git remote prune origin
-
   # http://www.jukie.net/bart/blog/pimping-out-git-log
   lg = log --graph --all --pretty=format:'%Cred%h%Creset - %s %Cgreen(%cr) %C(bold blue)%an%Creset %C(yellow)%d%Creset'
-
   # Serve local repo. http://coderwall.com/p/eybtga
   # Then other can access via `git clone git://#{YOUR_IP_ADDRESS}/
   serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
-
   m = checkout master
-
   # Removes a file from the index
   unstage = reset HEAD --
 
@@ -54,9 +49,13 @@
 
 [branch "master"]
   mergeoptions = --no-edit
+
 [user]
 	email = aymeric.vinot@lifen.fr
 	name = Aymeric Vinot
-	signingkey = 228175ECBC40B7EF
+	signingkey = B2F91CB0E5D5B1F7
+
 [commit]
 	gpgsign = true
+[gpg]
+	program = gpg2

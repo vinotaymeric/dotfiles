@@ -12,14 +12,16 @@ alias gcom="git checkout master"
 alias pullb="git pull --rebase origin HEAD"
 alias gp="git push -f origin HEAD"
 alias gco="git checkout"
-alias gcm="git commit -S -m"
+alias gcm="OVERCOMMIT_DISABLE=1 git commit -S -m"
+alias rgcm="git commit -S -m"
 alias gst="git status -sb"
 alias gsl="git stash list"
-alias gamend="git commit --amend"
+alias gamend="OVERCOMMIT_DISABLE=1 git commit --amend --no-edit"
+alias rgamend="git commit --amend --no-edit"
 
 # Dependencies
 alias bi="bundle install"
-alias yi="yarn install" 
+alias yi="yarn install"
 
 # Files
 alias r="cd code/vinotaymeric/lifen"
@@ -32,6 +34,13 @@ alias dr="docker run"
 alias dc="docker-compose"
 alias dcu="docker-compose up"
 
-# Rails 
+# Rails
 alias mig="bundle exec rake db:migrate && bundle exec rake db:test:prepare"
+alias base="bundle install && yarn && bundle exec rake db:migrate && bundle exec rake db:test:prepare && bundle exec rake after_party:run"
 alias tests="bundle exec spring rspec spec/"
+alias test="bundle exec rspec"
+alias stest="bundle exec spring rspec"
+
+# Other
+alias k="ssh-add -K ~/.ssh/id_ed25519"
+alias kill="lsof -ti:3000 -sTCP:LISTEN | xargs kill && lsof -ti:5000 -sTCP:LISTEN | xargs kill"

@@ -1,5 +1,4 @@
 ZSH=$HOME/.oh-my-zsh
-
 # You can change the theme with another one:
 #   https://github.com/robbyrussell/oh-my-zsh/wiki/themes
 ZSH_THEME="robbyrussell"
@@ -20,7 +19,7 @@ type -a rbenv > /dev/null && eval "$(rbenv init -)"
 
 # Rails and Ruby uses the local `bin` folder to store binstubs.
 # So instead of running `bin/rails` like the doc says, just run `rails`
-# Same for `./node_modules/.bin` and nodejs
+# Same for `./node_modules/.bin` and nodes
 export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
 
 # Store your own aliases in the ~/.aliases file and load them here.
@@ -33,4 +32,5 @@ export BUNDLER_EDITOR="'/Applications/Visual Studio Code.app/Contents/Resources/
 
 # NVM
  export NVM_DIR=~/.nvm
- [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+ [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"export PATH=/Users/aymeric.vinot/bin:$PATH
+export PATH=/Users/aymeric.vinot/bin:$PATH
