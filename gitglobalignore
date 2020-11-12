@@ -1,0 +1,44 @@
+.cache
+.eggs
+.env*
+.idea
+.grunt
+.mypy_cache/
+#.nvmrc
+.powrc
+.powrc.disabled
+.ruby-*
+.rvmrc
+.rvmrc.*
+.python-*
+.DS_Store
+*.swp
+*.swo
+coverage/
+crash.log
+libpeerconnection.log
+**/test.yml
+**/test-inventory
+venv/
+**/*.pyc
+node_modules/
+bower_components/
+examples/
+htmlcov/
+#tmp/
+
+
+# terraform state
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+
+# temporary alphonse
+/bin/rubocop
+/bin/setup-rubocop-fast
+
+# temporary terraform
+*-jbb/
+
+# rails
+lib/tasks/log.rake

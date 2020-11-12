@@ -34,3 +34,4 @@ export BUNDLER_EDITOR="'/Applications/Visual Studio Code.app/Contents/Resources/
  export NVM_DIR=~/.nvm
  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"export PATH=/Users/aymeric.vinot/bin:$PATH
 export PATH=/Users/aymeric.vinot/bin:$PATH
+export PATH=/Users/aymericvinot/bin:$PATH
