@@ -31,7 +31,7 @@ export LC_ALL=en_US.UTF-8
 export BUNDLER_EDITOR="'/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code' -a"
 
 # NVM
- export NVM_DIR=~/.nvm
- [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"export PATH=/Users/aymeric.vinot/bin:$PATH
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export PATH=/Users/aymeric.vinot/bin:$PATH
-export PATH=/Users/aymericvinot/bin:$PATH

@@ -15,7 +15,6 @@
 [core]
   pager = less -FRSX
 	editor = code --wait
-
 [diff]
     tool = default-difftool
 [difftool "default-difftool"]
@@ -56,7 +55,7 @@
 [user]
 	email = aymeric.vinot@lifen.fr
 	name = Aymeric Vinot
-	signingkey = B2F91CB0E5D5B1F7
+	signingkey = 60AA07184084FF74
 
 [commit]
 	gpgsign = true
